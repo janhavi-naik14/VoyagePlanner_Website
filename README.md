@@ -7,10 +7,8 @@ For instant assistance, our chatbot, powered by a Flask application, is at your 
 To enhance your travel experience, we've integrated various APIs. The YouTube API allows you to watch travel videos directly from YouTube, giving you a visual glimpse of your destinations. Additionally, the Weather API provides real-time weather forecasts for your selected destinations, helping you plan your trips accordingly.
 The Tourism Guide Project is designed to be your ultimate travel companion, making it easier for you to plan, explore, and enjoy your trips. We hope you find it helpful and enjoy using our platform as much as we enjoyed creating it for you.
 
-
-Getting Started
-
-Prerequisites
+Getting Started:-
+Prerequisites:-
 Node.js
 Mongoose
 Body-Parser
@@ -18,19 +16,19 @@ Express
 MongoDB
 Flask
 
-Installation
+Installation:-
 
-Clone the repository:
+Clone the repository:-
 git clonehttps://github.com/janhavi-naik14/travel_jp.git
 
-Navigate to the project directory:
+Navigate to the project directory:-
 cd travel_jp
 
-Install dependencies for Node.js application:
+Install dependencies for Node.js application:-
 npm install
 npm i mongoose express body-parser
 
-Start the Node.js server:
+Start the Node.js server:-
 node index.js
 
 Navigate to the Flask application directory and open virtual environment:-
@@ -44,8 +42,8 @@ pip install werkzeug==2.0.3
 
 Train the chatbox:-
 python
->>import nltk
->>nltk.download('punkt')
+import nltk
+nltk.download('punkt')
 python train.py
 
 Run the app:-
