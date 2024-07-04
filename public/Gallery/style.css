@@ -16,22 +16,31 @@ h1 {
   text-align: center;
   margin-top: 20px;
 }
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 #featureButton {
   position: absolute;
   top: 20px;
   right: 20px;
-  background:linear-gradient(to bottom, #88a0f1, #eea2e4); /* Forest Green for feature button */
+  background: linear-gradient(280deg, rgb(252, 128, 252), rgb(244, 124, 144), rgb(99, 99, 238));
+  background-size: 200% 200%; /* Set background-size to enable animation */
   color: #0a0a0a;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
-}
-
-#featureButton:hover {
-  background:linear-gradient(to bottom, #eea2e4,#88a0f1);; /* Darker green on hover */
+  animation: gradientAnimation 2s ease infinite;
 }
 
 .container {
@@ -120,13 +129,15 @@ button[type="submit"]:hover {
 }
 
 .face img {
-  max-width: 100%;
+  width: 230px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
   border-radius: 8px;
-  margin-bottom: 15px;
+ 
 }
 
+
 .face h2 {
-  margin: 0;
+  margin: 10px;
   color: #ffffff; /* Sunset Orange for heading */
   font-size: 18px;
 }
@@ -152,3 +163,4 @@ button[type="submit"]:hover {
 .btn a:hover {
   background: linear-gradient(135deg, #5C6DB8, #7EA0C4); /* Reverse gradient on hover */
 }
+
